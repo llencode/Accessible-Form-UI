@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Update</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+    <div class="container">
+      <form class="form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="we call you" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="your email" />
+        <span class="error-message">email sudah dipakai</span>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="your password" />
+        <span class="error-message">password tidak boleh kosong</span>
+        <span class="eye" onclick="togglePassword('confirm-password', this)">masih saya pantau</span>
+      <button type="submit">Update Profile</button>
+  </form>
+
+  <div class="sidebar">
+    <div class="circle">
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="#ccc" stroke-width="5" fill="none"/>
+        <circle cx="50" cy="50" r="40" stroke="#000" stroke-width="5" fill="none"
+                stroke-dasharray="251.2" stroke-dashoffset="88"
+                stroke-linecap="round" transform="rotate(-90 50 50)" />
+      </svg>
+      <div class="percent">65%</div>
+    </div>
+    <h3>Profile Completeness</h3>
+    <div class="tasks">
+      <p class="done">Create Account</p>
+      <p class="done">Update Roadmap Progress</p>
+      <p class="done">Setup Public Profile</p>
+      <p>Complete your first project</p>
+      <p>Invite your Friends</p>
+    </div>
+  </div>
+</div>
+
+
+
+  </body>
+  <script src="script.js"></script>
+</html>
